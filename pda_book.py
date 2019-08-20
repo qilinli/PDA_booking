@@ -1,7 +1,9 @@
+# This script will book the first earliest availability of the selected site
+# you can then use the script "booking_change.py" to search better one
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
-# Booking info
+# Booking info, plz modify accordingly
 license_number = "7281085"
 license_expiry_date = "05/04/2021"
 first_name = "xiangmeng"
@@ -32,5 +34,9 @@ try:
     Select(driver.find_element_by_name("searchBookingContainer:siteCode")).select_by_visible_text(site)
     driver.find_element_by_name("searchBookingContainer:search").click()
     driver.find_element_by_id("searchResultRadio0").click()
+    driver.find_element_by_name("confirm").click()
+    print("Booked.")
+except:
+    print("Not Booked.")
 finally:
     driver.close()
