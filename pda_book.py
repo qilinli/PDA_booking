@@ -4,12 +4,12 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
 # Booking info, plz modify accordingly
-license_number = "7281085"
-license_expiry_date = "05/04/2021"
-first_name = "xiangmeng"
-last_name = "tang"
-date_of_birth = "27/07/1991"
-site = "Cannington"
+license_number = "0000000"
+license_expiry_date = "dd/mm/yyyy"
+first_name = "ERIC"
+last_name = "LI"
+date_of_birth = "dd/mm/yyyy"
+site = "Success"
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)  # IMPORTANT due to the delay of ajax

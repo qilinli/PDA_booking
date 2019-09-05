@@ -3,18 +3,18 @@ from datetime import date, time, timedelta
 from selenium.webdriver.support.ui import Select
 
 # User info
-license_number = "7281085"
-license_expiry_date = "05/04/2021"
-first_name = "xiangmeng"
-last_name = "tang"
-date_of_birth = "27/07/1991"
+license_number = "00000000"
+license_expiry_date = "dd/mm/yyyy"
+first_name = "ERIC"
+last_name = "LI"
+date_of_birth = "dd/mm/yyyy"
 
 # Booking preference
 site = "Cannington"
 days_min = 10   # how many days from today to start booking
 days_max = 30   # how many days from today to stop booking
-start_time = time(9, 0, 0)  # time to start booking
-end_time = time(13, 30, 0)  # time to stop booking
+start_time = time(9, 0, 0)  # time to start booking 9am
+end_time = time(13, 30, 0)  # time to stop booking 13:30
 
 
 def date_in_range(DATE):
